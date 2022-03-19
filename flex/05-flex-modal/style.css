@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -19,7 +20,11 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex: 0 1 auto;
+  padding: 16px;
+  gap: 16px;
 }
 
 .icon {
@@ -33,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  /* flex: */
 }
 
 .close-button {
@@ -64,3 +71,34 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 10 auto;
+  gap: 8px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.buttons {
+}
+
+/* Modal is the main container - setup as a row*/
+/* icon is a child - setup as another flex but this time is a column*/
+/* body is a child - setup as another flex column */
+/* top is the bold and the exit button - setup as a row */
